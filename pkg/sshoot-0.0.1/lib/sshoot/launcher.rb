@@ -101,10 +101,14 @@ module Sshoot
       end
     end
 
+    def edit
+      shell.write("I will be adding this soon")
+    end
+
     def save!
       repo.save!
     end
-
+    
     def help
       text = %{
         - sshoot: help ---------------------------------------------------
