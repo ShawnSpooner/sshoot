@@ -1,7 +1,7 @@
 # sshoot
 
 ## What is it?
-Simple ssh manager for the command line. Heavily inspired by the awesome Boom library https://github.com/holman/boom
+Simple ssh manager for the command line. It allows you to save a named connection for ssh from the command line and review them at your leisure. I wrote it to help save me some time from digging around to find all the ip addresses of the servers I need to ssh into, heavily inspired by the awesome Boom library https://github.com/holman/boom.  
 
 ** Overview **
 
@@ -32,4 +32,4 @@ Simple ssh manager for the command line. Heavily inspired by the awesome Boom li
 
 == Copyright
 
-Copyright (c) 2011 Shawn Spooner. See LICENSE for details.
+Copyright (c) 2011 Shawn Spooner.
