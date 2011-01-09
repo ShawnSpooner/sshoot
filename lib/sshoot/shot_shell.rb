@@ -10,7 +10,8 @@ module Sshoot
     #
     # Returns true if found, false if not.
     def ssh(connection)
-      write `ssh #{connection}`
+      puts "Starting ssh for #{connection}"
+      exec "ssh #{connection}"
     end
     
     def read
