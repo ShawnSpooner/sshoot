@@ -1,7 +1,8 @@
 require 'rubygems'  
 require 'rake'  
 require 'echoe'
-require 'rspec'  
+require 'rspec'
+require 'rspec/core'
   
 Echoe.new('sshoot', '0.0.1') do |p|  
   p.description     = "A dead simple ssh manager for the command line"  
@@ -14,11 +15,8 @@ end
   
 Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
 
-desc  "Run all specs with rcov"
-RSpec::Core::RakeTask.new(:spec) do |t|
-	t.spec_opts = ["--color"]
-	t.spec_files = FileList['spec/**/*_spec.rb']
-end
+require 'rspec/core/rake_task'
 
-desc "Run the rspec"
+RSpec::Core::RakeTask.new(:spec)
+
 task :default => :spec
