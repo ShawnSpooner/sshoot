@@ -1,0 +1,2 @@
+stage: ubuntu@stage.server.com
+test: ubuntu@test.server.com

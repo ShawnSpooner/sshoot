@@ -1,0 +1,7 @@
+README
+RakeFile
+lib/sshoot.rb
+lib/sshoot/launcher.rb
+lib/sshoot/repo.rb
+Rakefile
+Manifest
